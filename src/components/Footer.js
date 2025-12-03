@@ -24,14 +24,7 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-4 mt-6">
-              <a 
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-500 transition"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
+         
 
               <a 
                 href="https://x.com/study_tap?t=TBlxkquZ1l4d3Cu8GWqNWg&s=08"
@@ -59,6 +52,25 @@ export default function Footer() {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
+
+              <a 
+  href="https://t.me/studytapofficial" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="hover:text-blue-400 transition"
+>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="22" 
+    height="22" 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    className="w-5 h-5"
+  >
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 12 12s12-5.372 12-12C24 5.373 18.627 0 12 0zm5.59 8.221l-1.837 8.644c-.138.617-.504.768-1.02.477l-2.832-2.088-1.366 1.315c-.151.151-.278.278-.57.278l.204-2.882 5.251-4.74c.228-.203-.05-.317-.354-.114l-6.492 4.086-2.798-.873c-.607-.19-.62-.605.127-.895l10.94-4.214c.507-.186.951.123.787.893z"/>
+  </svg>
+</a>
+
             </div>
           </div>
 

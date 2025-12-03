@@ -32,7 +32,6 @@ function App() {
 
         <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           <span className="text-blue-500">Tap it!</span><br />
-          <span className="text-gray-900">Get it!</span><br />
           <span className="text-gray-900">Read it!</span><br />
           <span className="text-blue-400">Excel in it!</span>
         </h1>
@@ -92,7 +91,7 @@ function App() {
       <div className="relative">
         <div className="bg-white rounded-2xl shadow-xl p-4">
           <img
-            src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2011/04/ThinkstockPhotos-504382222-1024x683.jpg"
             alt="Students working together"
             className="rounded-xl w-full"
           />

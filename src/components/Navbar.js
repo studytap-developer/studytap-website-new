@@ -15,7 +15,6 @@ export default function Navbar() {
     alt="StudyTap Logo" 
     className="w-14 h-14 object-contain" 
   />
-
         </div>
 
         <div className="hidden md:flex gap-4">

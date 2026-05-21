@@ -76,7 +76,7 @@ export default function Products() {
               <h4 className="text-3xl font-bold text-gray-900">
                 {card.price} - <span className="text-blue-500">₹300/-</span>
               </h4>
-              <p>for 2 months</p>
+              <p>for 1 month</p>
             </div>
           ))}
         </div>

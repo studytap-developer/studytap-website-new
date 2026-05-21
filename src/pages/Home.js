@@ -1,170 +1,30 @@
-// import { ArrowRight, Zap, Shield, TrendingUp, CheckCircle, Star } from 'lucide-react';
 
-// export default function Home() {
-//   const features = [
-//     {
-//       icon: Zap,
-//       title: 'Lightning Fast',
-//       description: 'Optimized performance that delivers results at incredible speeds.',
-//     },
-//     {
-//       icon: Shield,
-//       title: 'Secure & Reliable',
-//       description: 'Enterprise-grade security keeping your data safe and protected.',
-//     },
-//     {
-//       icon: TrendingUp,
-//       title: 'Scalable Growth',
-//       description: 'Built to grow with your business, from startup to enterprise.',
-//     },
-//   ];
-
-//   const benefits = [
-//     'Easy to integrate and customize',
-//     'Professional support team available 24/7',
-//     'Regular updates and improvements',
-//     'Cost-effective solutions for all businesses',
-//   ];
-
-//   return (
-//     <div className="bg-white">
-//       <section className="relative bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-//         <div className="absolute inset-0 overflow-hidden">
-//           <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-//           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-//         </div>
-
-//         <div className="relative max-w-7xl mx-auto">
-//           <div className="text-center max-w-3xl mx-auto">
-//             <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-//               <Star className="w-4 h-4 mr-2 fill-current" />
-//               Trusted by 10,000+ customers worldwide
-//             </div>
-//             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-//               Transform Your
-//               <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"> Digital </span>
-//               Experience
-//             </h1>
-//             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-//               Empower your business with cutting-edge solutions designed to drive growth,
-//               increase efficiency, and deliver exceptional results.
-//             </p>
-//             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-//               <button className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center justify-center">
-//                 Get Started Free
-//                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-//               </button>
-//               <button className="px-8 py-4 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-semibold hover:border-blue-500 hover:text-blue-600 hover:shadow-lg transition-all duration-200">
-//                 Watch Demo
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-//         <div className="max-w-7xl mx-auto">
-//           <div className="text-center mb-16">
-//             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-//               Why Choose Us
-//             </h2>
-//             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-//               Discover the features that make us the preferred choice for thousands of businesses
-//             </p>
-//           </div>
-
-//           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-//             {features.map((feature, index) => (
-//               <div
-//                 key={index}
-//                 className="group p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
-//               >
-//                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-//                   <feature.icon className="w-7 h-7 text-white" />
-//                 </div>
-//                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-//                   {feature.title}
-//                 </h3>
-//                 <p className="text-gray-600 leading-relaxed">
-//                   {feature.description}
-//                 </p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
-//         <div className="max-w-7xl mx-auto">
-//           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-//             <div>
-//               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-//                 Everything You Need to Succeed
-//               </h2>
-//               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-//                 Our comprehensive platform provides all the tools and features you need
-//                 to take your business to the next level.
-//               </p>
-//               <ul className="space-y-4 mb-8">
-//                 {benefits.map((benefit, index) => (
-//                   <li key={index} className="flex items-start">
-//                     <CheckCircle className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-//                     <span className="text-gray-700 text-lg">{benefit}</span>
-//                   </li>
-//                 ))}
-//               </ul>
-//               <button className="group px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 hover:shadow-lg transition-all duration-200 flex items-center">
-//                 Learn More
-//                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-//               </button>
-//             </div>
-
-//             <div className="relative">
-//               <div className="bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-//                 <div className="bg-white rounded-xl p-6 mb-4">
-//                   <div className="flex items-center justify-between mb-4">
-//                     <span className="text-sm font-semibold text-gray-500">PERFORMANCE</span>
-//                     <span className="text-2xl font-bold text-green-500">+127%</span>
-//                   </div>
-//                   <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-//                     <div className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full" style={{ width: '85%' }}></div>
-//                   </div>
-//                 </div>
-//                 <div className="bg-white rounded-xl p-6">
-//                   <h4 className="font-semibold text-gray-900 mb-3">Success Metrics</h4>
-//                   <div className="space-y-3">
-//                     <div className="flex justify-between items-center">
-//                       <span className="text-gray-600">User Satisfaction</span>
-//                       <span className="font-bold text-gray-900">98%</span>
-//                     </div>
-//                     <div className="flex justify-between items-center">
-//                       <span className="text-gray-600">Uptime</span>
-//                       <span className="font-bold text-gray-900">99.9%</span>
-//                     </div>
-//                     <div className="flex justify-between items-center">
-//                       <span className="text-gray-600">Response Time</span>
-//                       <span className="font-bold text-gray-900">&lt;50ms</span>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-     
-//     </div>
-//   );
-// }
-
-
-
+import React from "react";
 import { Star, Download, BookOpen, FolderTree, RefreshCw, ArrowRight } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
 function App() {
     const navigate = useNavigate();
+     const reels = [
+    { title: "EDTA Shortcut", video: "/reels/v1.mp4" },
+    { title: "R18 Chemistry Hack", video: "/reels/v2.mp4" },
+    { title: "Ion Exchange Resin", video: "/reels/v3.mp4" },
+    { title: "Exam Tips", video: "/reels/v4.mp4" },
+  ];
+
+  const [reelOpen, setReelOpen] = React.useState(false);
+  const [activeReel, setActiveReel] = React.useState(null);
+
+  const openReel = (index) => {
+    setActiveReel(index);
+    setReelOpen(true);
+  };
+
+  const closeReel = () => {
+    setReelOpen(false);
+    setActiveReel(null);
+  };
+
   return (
 
 <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white bg-slate-300">
@@ -329,7 +189,7 @@ function App() {
       onClick={() => navigate("/branches")}
       className="bg-white text-blue-500 px-8 py-3 rounded-lg inline-flex items-center gap-2 hover:bg-blue-200 transition font-medium"
     >
-    Explore Branches
+    Explore Branchesƒ
       <ArrowRight className="w-5 h-5" />
     </button>
     
@@ -337,9 +197,139 @@ function App() {
     </div>
   </section>
 
+  {/* ================= REELS SECTION ================= */}
+
+  <>
+      {/* ================= REELS SECTION ================= */}
+      <section className="bg-[#f5f5f7]">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+
+          <div
+            className="
+              flex gap-6 overflow-x-auto snap-x snap-mandatory
+              md:grid md:grid-cols-4 md:gap-6 md:overflow-hidden
+              [-ms-overflow-style:none] [scrollbar-width:none]
+              [&::-webkit-scrollbar]:hidden
+            "
+          >
+            {reels.slice(0, 4).map((reel, idx) => (
+              <button
+                key={idx}
+                className="
+                  snap-start min-w-[220px] md:min-w-0
+                  bg-white rounded-[30px]
+                  shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+                  hover:shadow-[0_16px_45px_rgba(0,0,0,0.12)]
+                  transition-all hover:-translate-y-1
+                  overflow-hidden
+                "
+              >
+                {/* REELS VIDEO CARD */}
+                <div className="relative w-full h-[380px] md:h-[420px] overflow-hidden bg-black">
+
+                  {/* Preview video (muted) */}
+                  <video
+                    src={reel.video}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                  />
+
+                  {/* Gradient overlay (unchanged) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
+
+                  {/* Watch button */}
+                  <div
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openReel(idx);
+                    }}
+                    className="absolute bottom-5 left-1/2 -translate-x-1/2
+                               bg-white/95 backdrop-blur
+                               rounded-full px-6 py-2.5
+                               text-sm font-semibold shadow-lg cursor-pointer"
+                  >
+                    ▶ Watch
+                  </div>
+
+                </div>
+              </button>
+            ))}
+          </div>
+
+          {/* View More on Instagram button */}
+          <div className="flex justify-center mt-10">
+            {/* Gradient border ring */}
+            <div
+              className="p-[2px] rounded-full"
+              style={{ background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8134af, #515bd4)" }}
+            >
+              <a
+                href="https://www.instagram.com/studytap.official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-flex items-center gap-3 px-8 py-3 rounded-full font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 group"
+                style={{ background: "linear-gradient(135deg, #f58529 0%, #dd2a7b 40%, #8134af 70%, #515bd4 100%)" }}
+              >
+                {/* Shine sweep on hover */}
+                <span
+                  className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-[-20deg]"
+                  style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent)" }}
+                />
+                {/* Instagram icon */}
+                <svg className="w-5 h-5 relative z-10" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span className="relative z-10 text-sm tracking-wide">View More on Instagram</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= VIDEO MODAL ================= */}
+      {reelOpen && activeReel !== null && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm
+                     flex items-center justify-center"
+          onClick={closeReel}
+        >
+          <div
+            className="relative w-[90%] max-w-[420px] h-[75vh]
+                       bg-black rounded-[28px] overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={closeReel}
+              className="absolute top-4 right-4 z-10
+                         bg-white/90 rounded-full px-3 py-1
+                         text-sm font-semibold"
+            >
+              ✕
+            </button>
+
+            {/* Video with sound */}
+            <video
+              src={reels[activeReel].video}
+              className="w-full h-full object-cover"
+              autoPlay
+              controls
+              playsInline
+            />
+          </div>
+        </div>
+      )}
+    </>
 </div>
 
   );
 }
 
 export default App;
+
+
